@@ -1,0 +1,46 @@
+body {
+    margin:0;
+}
+
+.wrap {
+    margin:0;
+    width:100%;
+    grid-gap: 0;
+    display:grid;
+    grid-template: 
+    "header header header header" 10vh   
+    "sidebar1 content content sidebar2" 30vh
+    "sidebar1 content content sidebar2"20vh
+    "sidebar1 content content sidebar2" 20vh
+    "footer footer footer footer" 20vh
+    / 1fr 2fr 2fr 1fr;
+}
+
+.item {
+    text-align: center;
+}
+  
+.heading {
+    background-color: red;
+    grid-area:header;
+}
+  
+.sidebar1 {
+   background-color: yellow;
+   grid-area:sidebar1;
+}
+  
+.content {
+   grid-area: content;
+   background-color: green;
+}
+  
+.sidebar2{
+  grid-area: sidebar2;
+  background-color: violet;
+}
+  
+.foot {
+   grid-area:footer;
+   background-color: pink;
+  }
